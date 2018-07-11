@@ -1,0 +1,8 @@
+{
+  "watch": ["src"],
+  "ext": "ts",
+  "exec": "./node_modules/.bin/ts-node ./src/server.local.ts",
+  "events": {
+    "restart": "./node_modules/.bin/notify -t 'ACM Server Restart' -i './public/images/amazon-icon.png'"
+  }
+}
