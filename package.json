@@ -2,6 +2,7 @@
   "name": "interviewcake",
   "version": "1.0.0",
   "main": "dist/src/index.js",
+  "typings": "lib/src/index.d.ts",
   "license": "MIT",
   "engines": {
     "node": ">=8"
@@ -16,44 +17,28 @@
     "test": "jest",
     "test:watch": "yarn test --watch",
     "test:coverage": "yarn test --coverage",
-    "precommit": "yarn test",
     "prepush": "yarn test"
   },
-  "jest": {
-    "transform": {
-      "^.+\\.tsx?$": "ts-jest"
-    },
-    "testRegex": "(/tests/.*|(\\.|/)(test|spec))\\.(jsx?|tsx?)$",
-    "moduleFileExtensions": [
-      "ts",
-      "tsx",
-      "js",
-      "jsx",
-      "json",
-      "node"
-    ],
-    "modulePathIgnorePatterns": [
-      "dist"
-    ]
+  "dependencies": {
+    "debug": "^3.1.0",
+    "dotenv": "^6.0.0",
+    "lodash": "^4.17.10"
   },
   "devDependencies": {
     "@types/debug": "^0.0.30",
     "@types/dotenv": "^4.0.3",
     "@types/jest": "^23.1.5",
+    "@types/lodash": "^4.14.112",
     "@types/node": "^10.5.2",
     "husky": "^0.14.3",
-    "jest": "^23.4.0",
+    "jest": "^22.4.2",
     "nodemon": "^1.18.0",
     "prettier": "^1.13.7",
-    "ts-jest": "^23.0.0",
+    "ts-jest": "^22.4.6",
     "ts-loader": "^4.4.2",
     "ts-node": "^7.0.0",
     "tslint": "^5.10.0",
     "tslint-config-prettier": "^1.13.0",
     "typescript": "^2.9.2"
-  },
-  "dependencies": {
-    "debug": "^3.1.0",
-    "dotenv": "^6.0.0"
   }
 }
